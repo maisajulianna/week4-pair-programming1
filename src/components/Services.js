@@ -1,8 +1,11 @@
+import {useState } from 'react';
 import { services } from "../data";
 import Service from "./Service";
 import Title from "./Title";
 
 function Services() {
+	const [servicesData, setServicesData] = useState(services);
+	
 	return (
 		<div>
 			<section className="section services" id="services">
