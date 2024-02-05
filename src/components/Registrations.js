@@ -1,25 +1,25 @@
-import { useState } from 'react';
 import React from 'react';
-import Registration from './Registration';
+import Title from "./Title";
 
 function Registrations() {
   return (
     <div className="registration">
-      <h2>Registration</h2>
-      <div className="registration">
+      <Title title="registration"/>
+      <div className="registration-box">
         <form action="/submit_registration" method="post">
-        <label for="username">username:</label>
+        <label htmlFor="username">username: </label>
         <input type="text" id="username" required/><br />
 
-        <label for="email">email:</label>
+        <label htmlFor="email">email: </label>
         <input type="email" id="email" name="email" required/><br />
 
-        <label for="password">password:</label>
+        <label htmlFor="password">password: </label>
         <input type="password" id="password" name="password" required/><br />
 
-        <label for="confirmPassword">confirm password:</label>
+        <label htmlFor="confirmPassword">confirm password: </label>
         <input type="password" id="confirmPassword" name="confirmPassword" required/><br />
-        <button type="submit">Register</button>
+
+        <button type="submit">register</button>
       </form>
     </div>
     </div>

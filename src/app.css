@@ -221,9 +221,7 @@ Hero
 About
 ===============
 */
-/* section added to globals */
-/* title added to globals */
-/* section center added to globals */
+
 .about-img,
 .about-info {
   margin-bottom: 2rem;
@@ -272,6 +270,27 @@ Registrations
   margin-right: auto;
   margin-top: 10rem;
 }
+
+.registration-box {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.registration-box label {
+  padding: 2px;
+}
+
+.registration input {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.registration button {
+  padding: 3px;
+  margin: 5px;
+  margin-top: 15px;
+}
+
 
 /*
 =============== 
@@ -458,14 +477,16 @@ Footer
 .copyright span {
   margin-left: 0.5rem;
 }
+
 /*
 =============== 
 Navbar
 ===============
 */
-/* add :not(.nav-logo) to img */
-
-.navbar {
+nav {
+  background-color: --clr-primary-8;
+  color: --clr-grey-1;
+  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -477,117 +498,16 @@ Navbar
   display: flex;
   align-items: center;
 }
-.nav-icons {
-  display: none;
+
+li {
+  display: inline;
+  margin-right: 1rem;
 }
-.nav-center {
-  width: 90vw;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-toggle {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1.5rem;
-  color: var(--clr-primary-5);
+
+a:hover {
+  color:black;
   cursor: pointer;
-  transition: var(--transition);
 }
-.nav-toggle:hover {
-  transform: scale(1.2);
-}
-.nav-link {
-  display: block;
-  padding: 1rem 2rem;
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  transition: var(--transition);
-  color: var(--clr-grey-1);
-  cursor: pointer;
-  font-size: 1rem;
-}
-.nav-link:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
-  padding-left: 2.25rem;
-}
-/* nav toggle functionality */
-.nav-links {
-  height: 0;
-  overflow: hidden;
-  transition: var(--transition);
-}/*
-.nav-links {
-  height: auto;
-  display: flex;
-};*/
-.show-links {
-  height: 280px;
-}
-.nav-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* optional */
-  flex-wrap: wrap;
-};
-
-/* nav at bigger screen size */
-@media screen and (min-width: 992px) {
-  /* hide nav toggle button */
-  .nav-toggle {
-    display: none;
-  };
-};
-
-/* set hero to 
-min-height:calc(100vh - 62px);
-*/
-
-  ul {
-    list-style: none;
-    padding: 0;
-  };
-  li {
-    display: inline;
-    margin-right: 1rem;
-  };
-  a {
-    text-decoration: none;
-    color: #fff;
-  };
-  .nav-header {
-    padding: 0 0;
-  };
-  .nav-link {
-    padding: 0 0;
-  };
-  .nav-link:hover {
-    padding: 0;
-    color: var(--clr-primary-5);
-    background: transparent;
-  };
-  .nav-icons {
-    display: flex;
-  };
-  .nav-link {
-    margin-right: 0.7rem;
-  };
-  .nav-icon {
-    margin-right: 0.7rem;
-    color: var(--clr-primary-5);
-    font-size: 1.2rem;
-    transition: var(--transition);
-  };
-  .nav-icon:hover {
-    color: var(--clr-primary-8);
-  };
 
 
 .section-dummy {
