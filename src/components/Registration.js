@@ -1,6 +1,7 @@
 function Registration() {
   return (
-      <form action="/submit_registration" method="post">
+    <div className="registration">
+        <form action="/submit_registration" method="post">
         <label for="username">username:</label>
         <input type="text" id="username" required/>
 
@@ -13,6 +14,7 @@ function Registration() {
         <label for="confirmPassword">confirm password:</label>
         <input type="password" id="confirmPassword" name="confirmPassword" required/>
       </form>
+    </div>
   );
 };
 

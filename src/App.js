@@ -1,12 +1,10 @@
 import React, { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import About from "./components/About";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Tours from "./components/Tours";
-import Registration from "./components/Registration";
+import Registrations from "./components/Registrations";
 import "./app.css";
 
 function App() {
@@ -14,14 +12,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<About />} />
+          <Route index element={<Hero />} />
           <Route path="services" element={<Services />} />
           <Route path="tours" element={<Tours />} />
           <Route path="contact" element={<About />} />
-          <Route part="registration" element={<Registration />}/>
-          <Route path="hero" element={<Hero />} />
-          <Route path="navbar" element={<Navbar />} />
-          <Route path="footer" element={<Footer />} />
+          <Route path="registration" element={<Registrations />}/>
         </Route>
       </Routes>
     </BrowserRouter>

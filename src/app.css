@@ -259,6 +259,20 @@ About
     position: relative;
   }
 }
+
+/*
+=============== 
+Registrations
+===============
+*/
+
+.registration {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+}
+
 /*
 =============== 
 Services
@@ -508,62 +522,72 @@ Navbar
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-}
+}/*
+.nav-links {
+  height: auto;
+  display: flex;
+};*/
 .show-links {
   height: 280px;
 }
-
-
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* optional */
+  flex-wrap: wrap;
+};
 
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
   /* hide nav toggle button */
   .nav-toggle {
     display: none;
-  }
-  /* show links */
-  .nav-links {
-    height: auto;
-    display: flex;
-  }
-  .nav-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* optional */
-    flex-wrap: wrap;
-  }
+  };
+};
+
+/* set hero to 
+min-height:calc(100vh - 62px);
+*/
+
+  ul {
+    list-style: none;
+    padding: 0;
+  };
+  li {
+    display: inline;
+    margin-right: 1rem;
+  };
+  a {
+    text-decoration: none;
+    color: #fff;
+  };
   .nav-header {
     padding: 0 0;
-  }
+  };
   .nav-link {
     padding: 0 0;
-  }
+  };
   .nav-link:hover {
     padding: 0;
     color: var(--clr-primary-5);
     background: transparent;
-  }
+  };
   .nav-icons {
     display: flex;
-  }
-
+  };
   .nav-link {
     margin-right: 0.7rem;
-  }
+  };
   .nav-icon {
     margin-right: 0.7rem;
     color: var(--clr-primary-5);
     font-size: 1.2rem;
     transition: var(--transition);
-  }
+  };
   .nav-icon:hover {
     color: var(--clr-primary-8);
-  }
-}
-/* set hero to 
-min-height:calc(100vh - 62px);
-*/
+  };
 
 
 .section-dummy {
